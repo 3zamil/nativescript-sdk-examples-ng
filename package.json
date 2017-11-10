@@ -64,7 +64,7 @@
     "markdown-snippet-injector": "^0.2.0",
     "nativescript-css-loader": "~0.26.0",
     "nativescript-dev-typescript": "^0.4.5",
-    "nativescript-dev-webpack": "https://github.com/NativeScript/nativescript-dev-webpack.git#kerezov/hooks",
+    "nativescript-dev-webpack": "https://github.com/NativeScript/nativescript-dev-webpack.git#angular5",
     "nativescript-worker-loader": "~0.8.1",
     "opener": "^1.4.1",
     "raw-loader": "~0.5.1",
