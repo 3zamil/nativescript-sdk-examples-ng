@@ -8,7 +8,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const { NativeScriptWorkerPlugin } = require("nativescript-worker-loader/NativeScriptWorkerPlugin");
 const { AngularCompilerPlugin } = require("@ngtools/webpack");
-const { NativeScriptAngularCompilerPlugin } = require("nativescript-dev-webpack/plugins");
 
 const mainSheet = `app.css`;
 
@@ -188,7 +187,7 @@ module.exports = env => {
                 statsFilename: join(__dirname, "report", `stats.json`),
             }),
 
-            new NativeScriptAngularCompilerPlugin(
+            new nsWebpack.NativeScriptAngularCompilerPlugin(
                 Object.assign({
                     entryModule: resolve(__dirname, "app/app.module#AppModule"),
                     platformOptions: {
