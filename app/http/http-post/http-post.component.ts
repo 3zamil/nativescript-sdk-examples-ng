@@ -25,7 +25,7 @@ export class HttpPostComponent {
         this.myPostService
             .postData({ username: this.user, password: this.pass })
             .subscribe(res => {
-                this.message = res.json.data.username;
+                this.message = (<any>res).json.data.username;
                 // >> (hide)
                 this.isItemVisible = true;
                 // << (hide)
